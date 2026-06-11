@@ -75,7 +75,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chaines - Atelier Java</title>
-    <link rel="stylesheet" href="<%= request.getContextPath() %>/assets/styles.css?v=3">
+    <link rel="stylesheet" href="<%= request.getContextPath() %>/assets/styles.css?v=4">
 </head>
 <body>
 <a class="skip-link" href="#contenu">Aller au contenu</a>
@@ -139,7 +139,7 @@
                 </article>
                 <article class="result-card">
                     <h2>Verlan</h2>
-                    <p><%= escapeHtml(new StringBuilder(text).reverse().toString()) %></p>
+                    <p><%= escapeHtml(new StringBuilder(text.toLowerCase()).reverse().toString()) %></p>
                 </article>
                 <article class="result-card">
                     <h2>Voyelles / consonnes</h2>

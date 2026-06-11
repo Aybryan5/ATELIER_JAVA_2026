@@ -25,7 +25,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mes taches - Mini Gestionnaire de Taches</title>
     <meta name="description" content="Liste des taches stockees dans la session utilisateur avec suppression et statut termine.">
-    <link rel="stylesheet" href="<%= request.getContextPath() %>/assets/styles.css?v=3">
+    <link rel="stylesheet" href="<%= request.getContextPath() %>/assets/styles.css?v=4">
 </head>
 <body>
 <a class="skip-link" href="#contenu">Aller au contenu</a>

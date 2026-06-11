@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajouter une tache - Mini Gestionnaire de Taches</title>
     <meta name="description" content="Formulaire JSP pour ajouter une tache stockee dans la session utilisateur.">
-    <link rel="stylesheet" href="<%= request.getContextPath() %>/assets/styles.css?v=3">
+    <link rel="stylesheet" href="<%= request.getContextPath() %>/assets/styles.css?v=4">
 </head>
 <body>
 <a class="skip-link" href="#contenu">Aller au contenu</a>

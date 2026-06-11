@@ -60,13 +60,13 @@
         return builder.toString();
     }
 
-    private String diamond(int size) {
+    private String halfDiamond(int size) {
         StringBuilder builder = new StringBuilder();
         for (int row = 1; row <= size; row++) {
-            builder.append(repeat(" ", size - row)).append(repeat("*", (row * 2) - 1)).append('\n');
+            builder.append(repeat(" ", size - row)).append(repeat("*", row)).append('\n');
         }
         for (int row = size - 1; row >= 1; row--) {
-            builder.append(repeat(" ", size - row)).append(repeat("*", (row * 2) - 1)).append('\n');
+            builder.append(repeat(" ", size - row)).append(repeat("*", row)).append('\n');
         }
         return builder.toString();
     }
@@ -102,7 +102,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boucles - Atelier Java</title>
-    <link rel="stylesheet" href="<%= request.getContextPath() %>/assets/styles.css?v=3">
+    <link rel="stylesheet" href="<%= request.getContextPath() %>/assets/styles.css?v=4">
 </head>
 <body>
 <a class="skip-link" href="#contenu">Aller au contenu</a>
@@ -165,8 +165,8 @@
                     <pre><%= isoscelesTriangle(value) %></pre>
                 </article>
                 <article class="result-card">
-                    <h2>Losange</h2>
-                    <pre><%= diamond(value) %></pre>
+                    <h2>Demi losange</h2>
+                    <pre><%= halfDiamond(value) %></pre>
                 </article>
                 <article class="result-card">
                     <h2>Multiplication</h2>

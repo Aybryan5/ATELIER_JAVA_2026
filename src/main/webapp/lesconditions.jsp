@@ -15,6 +15,13 @@
     private String valueOrEmpty(String value) {
         return value == null ? "" : value.trim();
     }
+
+    private String pairOuImpair(int value) {
+        if (value % 2 == 0) {
+            return "pair";
+        }
+        return "impair";
+    }
 %>
 <%
     String rawA = request.getParameter("a");
@@ -46,7 +53,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conditions - Atelier Java</title>
-    <link rel="stylesheet" href="<%= request.getContextPath() %>/assets/styles.css?v=3">
+    <link rel="stylesheet" href="<%= request.getContextPath() %>/assets/styles.css?v=4">
 </head>
 <body>
 <a class="skip-link" href="#contenu">Aller au contenu</a>
@@ -114,7 +121,7 @@
                 </article>
                 <article class="result-card">
                     <h2>Pair ou impair</h2>
-                    <p><%= number %> est <%= number % 2 == 0 ? "pair" : "impair" %>.</p>
+                    <p><%= number %> est <%= pairOuImpair(number) %>.</p>
                 </article>
             </div>
         <% } %>

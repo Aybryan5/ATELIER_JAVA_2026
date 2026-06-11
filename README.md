@@ -9,6 +9,7 @@ Application web Java JSP/Servlets permettant de gerer des taches stockees dans l
 - Suppression d'une tache.
 - Marquage d'une tache comme terminee.
 - Exercices JSP : boucles, conditions, chaines de caracteres, tableaux.
+- Exercices POO : objets, constructeurs, polymorphisme.
 
 ## Lancer le projet
 

@@ -21,7 +21,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil - Mini Gestionnaire de Taches</title>
     <meta name="description" content="Application JSP et Servlets pour gerer des taches en session utilisateur.">
-    <link rel="stylesheet" href="<%= request.getContextPath() %>/assets/styles.css?v=3">
+    <link rel="stylesheet" href="<%= request.getContextPath() %>/assets/styles.css?v=4">
 </head>
 <body>
 <a class="skip-link" href="#contenu">Aller au contenu</a>
@@ -75,6 +75,18 @@
             <a class="exercise-link" href="<%= request.getContextPath() %>/lesconditions.jsp">Conditions</a>
             <a class="exercise-link" href="<%= request.getContextPath() %>/leschaines.jsp">Chaines</a>
             <a class="exercise-link" href="<%= request.getContextPath() %>/lestableaux.jsp">Tableaux</a>
+        </div>
+    </section>
+
+    <section class="exercise-section" aria-labelledby="poo-title">
+        <div class="section-heading">
+            <span class="eyebrow">Atelier Java 2</span>
+            <h2 id="poo-title">POO</h2>
+        </div>
+        <div class="link-board compact-board">
+            <a class="exercise-link" href="<%= request.getContextPath() %>/lesobjets.jsp">Objets</a>
+            <a class="exercise-link" href="<%= request.getContextPath() %>/lesconstructeurs.jsp">Constructeurs</a>
+            <a class="exercise-link" href="<%= request.getContextPath() %>/lepolymorphisme.jsp">Polymorphisme</a>
         </div>
     </section>
 </main>

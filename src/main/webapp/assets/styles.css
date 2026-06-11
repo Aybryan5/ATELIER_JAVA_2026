@@ -539,6 +539,10 @@ textarea:focus {
     grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.compact-board {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .exercise-link {
     background: rgba(251, 251, 247, 0.74);
     border: 1px solid var(--line);
@@ -579,6 +583,10 @@ textarea:focus {
     grid-template-columns: minmax(0, 1fr) auto;
 }
 
+.multi-inline-form {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto;
+}
+
 .compact-form {
     margin-bottom: 18px;
 }
@@ -587,6 +595,10 @@ textarea:focus {
     display: grid;
     gap: 12px;
     grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.three-fields {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .result-grid {
@@ -673,7 +685,8 @@ textarea:focus {
     }
 
     .inline-form,
-    .wide-form {
+    .wide-form,
+    .multi-inline-form {
         grid-template-columns: 1fr;
     }
 }
