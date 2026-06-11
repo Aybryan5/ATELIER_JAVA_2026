@@ -1,6 +1,8 @@
 name: Industrialisation continue sur le serveur AWS (Tomcat)
 
-on: push
+on:
+  push:
+  workflow_dispatch:
 
 jobs:
   Deploy:
